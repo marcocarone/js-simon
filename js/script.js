@@ -19,7 +19,7 @@ $(document).ready(function() {
     listaNumeriCasuali.push(numeroCasuale);
   }
   console.log(listaNumeriCasuali);
-  alert("Cerca di memorizzare questi cinque numeri: " + listaNumeriCasuali);
+  alert("Hai 30 secondi per memorizzare questi cinque numeri: " + listaNumeriCasuali);
 
   setTimeout(function() {
     for (var i = 0; i < 5; i++) {
