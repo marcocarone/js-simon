@@ -28,7 +28,7 @@ $(document).ready(function() {
         listaNumeriPrompt.push(numeroPrompt);
       }
     }
-    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente il/i numero/i: " + listaNumeriPrompt)
+    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente il numero: " + listaNumeriPrompt)
     console.log(listaNumeriPrompt)
   }, 30000)
 
