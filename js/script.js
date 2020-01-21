@@ -34,7 +34,7 @@ $(document).ready(function() {
     }
     alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente i numeri: " + listaNumeriPrompt)
     console.log(listaNumeriPrompt)
-  }, 1000)
+  }, 30000)
 
 });
 
