@@ -6,6 +6,7 @@
 // dice quanti e quali dei numeri da indovinare sono
 // stati individuati
 
+
 $(document).ready(function() {
 
   var listaNumeriCasuali = [];
@@ -19,20 +20,22 @@ $(document).ready(function() {
     listaNumeriCasuali.push(numeroCasuale);
   }
   console.log(listaNumeriCasuali);
-  alert("Prova a memorizzare questi cinque numeri: " + listaNumeriCasuali + ". Dopo aver cliccaco su ok, attendi 30 secondi e successivamente prova ad inserire i numeri che ricordi");
+  alert("Cerca di memorizzare questi cinque numeri: " + listaNumeriCasuali);
 
   setTimeout(function() {
     for (var i = 0; i < 5; i++) {
-      numeroPrompt = parseInt(prompt("Scrivi il numero che ricordi"));
+      numeroPrompt = parseInt(prompt("inserisci i numeri che ricordi"));
       if (numeroPrompt == listaNumeriCasuali[i]) {
         listaNumeriPrompt.push(numeroPrompt);
       }
     }
-    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente il numero: " + listaNumeriPrompt)
+    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente i numeri: " + listaNumeriPrompt)
     console.log(listaNumeriPrompt)
-  }, 30000)
+  }, 1000)
 
 });
+
+
 
 
 function genNumeriCasuali(min, max) {
