@@ -25,9 +25,12 @@ $(document).ready(function() {
   setTimeout(function() {
     for (var i = 0; i < 5; i++) {
       numeroPrompt = parseInt(prompt("inserisci i numeri che ricordi"));
-      if (numeroPrompt == listaNumeriCasuali[i]) {
-        listaNumeriPrompt.push(numeroPrompt);
+      for (var f = 0; f < listaNumeriCasuali.length; f++) {
+        if (numeroPrompt == listaNumeriCasuali[f]) {
+          listaNumeriPrompt.push(numeroPrompt);
+        }
       }
+
     }
     alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente i numeri: " + listaNumeriPrompt)
     console.log(listaNumeriPrompt)
