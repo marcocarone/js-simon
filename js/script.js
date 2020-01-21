@@ -19,16 +19,16 @@ $(document).ready(function() {
     listaNumeriCasuali.push(numeroCasuale);
   }
   console.log(listaNumeriCasuali);
-  alert("Hai 30 secondi per memorizzare questi cinque numeri: " + listaNumeriCasuali);
+  alert("Prova a memorizzare questi cinque numeri: " + listaNumeriCasuali + ". Dopo aver cliccaco su ok, attendi 30 secondi e successivamente prova ad inserire i numeri che ricordi");
 
   setTimeout(function() {
     for (var i = 0; i < 5; i++) {
-      numeroPrompt = parseInt(prompt("inserisci i numeri che ricordi"));
+      numeroPrompt = parseInt(prompt("Scrivi il numero che ricordi"));
       if (numeroPrompt == listaNumeriCasuali[i]) {
         listaNumeriPrompt.push(numeroPrompt);
       }
     }
-    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente i numeri: " + listaNumeriPrompt)
+    alert("Hai indovinato " + listaNumeriPrompt.length + " numeri. Esattamente il/i numero/i: " + listaNumeriPrompt)
     console.log(listaNumeriPrompt)
   }, 30000)
 
